@@ -16,4 +16,5 @@ ddd
 dddd
 
 ## References
-ddd
+[1] [TestRank package developed by lovit][TRlink]
+[TRlink]: https://gist.github.com/ihoneymon/652be052a0727ad59601
