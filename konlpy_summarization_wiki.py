@@ -3,7 +3,6 @@ import urllib.request
 from bs4 import BeautifulSoup
 import re
 import pyttsx3
-# recognize keyboard event
 from pynput.keyboard import Listener, Key, KeyCode
 import webbrowser
 
