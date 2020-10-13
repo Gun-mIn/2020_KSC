@@ -6,8 +6,8 @@ This repo contains the source code of the paper submitted to KSC 2020. We pre-pr
 ## Program Requirements
 dddd
 
-## Text Summarization
-dddd
+## [Text Summarization](https://namu.wiki/w/%EC%A0%95%EC%B9%98)
+ㅇㅇㅇ
 
 ## Key Event & TTS
 ddd
