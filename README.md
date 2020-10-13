@@ -16,5 +16,5 @@ ddd
 dddd
 
 ## References
-[1] [TestRank package developed by lovit][TRlink]
-[TRlink]: https://gist.github.com/ihoneymon/652be052a0727ad59601
+[1] [textrank/lovit][trlink]
+[trlink]: "https://gist.github.com/ihoneymon/652be052a0727ad59601"
