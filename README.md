@@ -16,5 +16,4 @@ ddd
 dddd
 
 ## References
-1. [textrank/lovit][trlink]
-[trlink]: "https://gist.github.com/ihoneymon/652be052a0727ad59601"
+1. [lovit textrank Git Repo]: https://gist.github.com/ihoneymon/652be052a0727ad59601 "Go repo"
