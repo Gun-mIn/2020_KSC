@@ -16,4 +16,5 @@ ddd
 dddd
 
 ## References
-1. [lovit textrank Git Repo]: https://gist.github.com/ihoneymon/652be052a0727ad59601 "Go repo"
+1. [lovit textrank Git Repo](https://github.com/lovit/textrank/)
+2. [링크 텍스트](https://colab.research.google.com/drive/1Xi7VsbFSpxo3--Ejwv4khE7lFzBjx2Ct#scrollTo=6DAcEokJX7CC)
