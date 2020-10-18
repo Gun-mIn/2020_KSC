@@ -26,6 +26,12 @@
  - 블로그 포스트와 같은 SNS의 감성적인 글은, 추출적 요약(Extractive Summarization)의 특성상 요약 정보 생성 결과가 유의미하지 않다.
  - 크롤링해 전처리한 원문 내용의 결과물이 깔끔하지 않다. 만약 위키 사이트 내에서만 구현하고자 한다면, 위키의 내용을 크롤링하는 것을 돕는 [API](https://www.mediawiki.org/wiki/API:Main_page "about Media Wiki API")를 이용하는 편이 훨씬 쉬울 것이다.
  - 추후 다양한 사이트에서 모두 활용이 가능하도록 개선하고, release 버전을 제작하여 사용성 테스트를 진행할 계획이다.
+
+## OS & Browser Support
+| OS | Browser  |
+|--|--|
+| <img src="https://e7.pngegg.com/pngimages/675/674/png-clipart-windows-10-iot-microsoft-windows-iot-10-blue-angle.png" width = "150"> | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Chrome_icon_%28September_2014%29.svg/512px-Google_Chrome_icon_%28September_2014%29.svg.png" width="100"/> |
+
  
 https://youtu.be/gTFmJWGsmNE
 
