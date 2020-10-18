@@ -30,7 +30,7 @@
 ## OS & Browser Support
 | OS | Browser  |
 |--|--|
-| <img src="https://e7.pngegg.com/pngimages/675/674/png-clipart-windows-10-iot-microsoft-windows-iot-10-blue-angle.png" width = "150"> | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Chrome_icon_%28September_2014%29.svg/512px-Google_Chrome_icon_%28September_2014%29.svg.png" width="100"/> |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Windows_10_Logo.svg" width = "200" height="80"> | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Chrome_icon_%28September_2014%29.svg/512px-Google_Chrome_icon_%28September_2014%29.svg.png" width="100"/> |
 
  
 https://youtu.be/gTFmJWGsmNE
