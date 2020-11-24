@@ -1,7 +1,15 @@
+
 # Implementation of Text Data Analysis and Human-Web Interaction for Improving Web Accessibility of Blind People
 
 &nbsp;&nbsp;&nbsp;&nbsp;한국 시각장애인의 웹 접근성은 시각이 있는 인터넷 사용자와 비교했을 때, 현저히 낮은 수준에 있다. 시각장애 인터넷 사용자는 e-정부 사이트 이용과 같은 사회 활동적 측면 뿐만 아니라, e-캠퍼스와 같은 교육적 측면에서도 불편을 겪고 있다. 따라서, 본 연구는 한국의 **전맹** 시각장애인을 대상으로 웹 접근성을 높일 수 있는 방법을 새롭게 제안 및 구현하였다.
 
+# How to use - Quick Start
+
+ 1. `git clone https://github.com/Gun-mIn/2020_KSC.git` 로 프로젝트를 복사한다.
+ 2. cmd 창에서 `pip install -r requirements.txt` 를 실행하여 필요한 모든 패키지를 설치한다.
+ 3. cmd 창에서 `pip install -r textrank.txt` 를 실행하여 [lovit의 textrank 패키지](https://github.com/lovit/textrank.git)를 설치한다.
+ 4. textrank를 이용하여 추출한 요약문과, 원문의 내용을 TTS의 합성음으로 듣고 싶다면, **TEXTRANK-namuwiki_and_TTS.py** 를 실행한다. 키보드 숫자 자판을 이용하여 실행 동작 제어가 가능하다.
+ 5. 나무위키 요약 프로그램의 성능을 알 수 있는 ROUGE 평가 결과를 보고 싶다면, **ROUGE_of_TEXTRANK.py**를 실행한다.
 
 # Description
 
@@ -39,13 +47,14 @@
  
 | OS | Browser | Site |
 |--|--|--|
-| <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Windows_10_Logo.svg" width = "300" height="60"> | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Chrome_icon_%28September_2014%29.svg/512px-Google_Chrome_icon_%28September_2014%29.svg.png" width="90"/> |<a href = "https://namu.wiki/w/%EB%82%98%EB%AC%B4%EC%9C%84%ED%82%A4"><img src="https://w.namu.la/s/895d8eaf4bbb3b9b2ca614bbf22cc8229ce77b2e780d3b63abac8f04510493038affe6e8be4eea6e33a6d1fb5c50733697da8edec268c09b1a585af1df7d11fb9b0381a3638890a6cde85ebd84c5ef64f19075b10fb409ef867e5a603b543d10d85e1efb0694591b384af2facb760d70" width="100">|
+| <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Windows_10_Logo.svg" width = "300" height="60"> | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Chrome_icon_%28September_2014%29.svg/512px-Google_Chrome_icon_%28September_2014%29.svg.png" width="90"/> |<a href = "https://namu.wiki/w/%EB%82%98%EB%AC%B4%EC%9C%84%ED%82%A4"><img src="https://w.namu.la/s/895d8eaf4bbb3b9b2ca614bbf22cc8229ce77b2e780d3b63abac8f04510493038affe6e8be4eea6e33a6d1fb5c50733697da8edec268c09b1a585af1df7d11fb9b0381a3638890a6cde85ebd84c5ef64c668ad266bb69863feb52937a5b262c0cd1615100f772c348a588a801574f4dc" width="100">|
 
 ## Program Requirements
 
  - KoNLPy 설치를 위해선, JDK가 준비되어 있어야 한다. 설치에서 참고했던 포스트를 링크해두었다.
- - textrank 패키지의 경우, GitHub Repo에서 `git clone https://~`을 이용하여 설치했다. 이론과 예제에 대한 포스트 글과 repo 링크를 걸어두었다.
- - 아래 패키지를 모두 설치해야 실행이 가능하다.
+ - textrank 패키지의 경우, GitHub Repo에서 `pip install git+https://~`을 이용하여 설치했다. 이론과 예제에 대한 포스트 글과 repo 링크를 걸어두었다.
+ - ~~아래 패키지를 모두 설치해야 실행이 가능하다.~~
+  
 
 |          |Package  |Version | Remarks     | Category |
 |:----------:|:--------:|:--------:|:--------|:--------|
@@ -58,7 +67,7 @@
 |7|pyttsx3|2.90| |tts|
 |8|urllib3|1.25.10| |go to hyperlinked page|
 
-# Results
+## Audio-based & Keyboard Interface 
 - 프로그램을 실행시키면 아래와 같은 순서로 동작한다.
 
  1. 키보드 명령어에 대한 안내 음성 출력.
@@ -77,3 +86,24 @@
 |5|프로그램 종료|
 
 - 프로그램의 시연 동영상은 [Youtube](https://youtu.be/gTFmJWGsmNE)에 업로드해두었다.
+
+#  ROUGE-N Score
+textrank를 이용하여 추출한 나무위키 사이트의 요약문에 대하여 ROUGE 평가를 진행하였다. Python의 [rouge 패키지](https://pypi.org/project/rouge/)를 이용했고, 실험 세팅과 결과는 다음과 같다.
+
+## Setting
+
+ 1. 3개의 나무위키 글을 선정한 후, textrank 기능으로 요약문을 생성한다.
+ 2. 3개의 나무위키 글에 대한 요약문을 실험자가 직접 작성한다.
+ 3. *1*에서 생성된 요약문과 *2*에서 사람에 의해 생성된 요약문을 비교하여 ROUGE-1, ROUGE-2, ROUGE-l 평과 결과를 확인한다.
+ 4. ROUGE-N 평가의 점수는 F-measure로 계산된 값을 이용하고, 소수점 다섯째 자리에서 반올림한다.
+
+> 이때,  *2*의 실험자가 작성한 요약문은,  textrank가 추출적 요약 기법임을 고려하여 나무위키 글에서 중요하게 생각하는 문장을 3줄 추출하는 방식으로 작성하였다.
+
+> ROUGE 평가는 앞서 언급한 python의 [rouge 패키지](https://pypi.org/project/rouge/)를 이용하여 진행하였다. 
+
+## Results
+| URL | ROUGE-1 | ROUGE-2 | ROUGE-l |
+|:--:|:--:|:--:|:--:|
+|1|0.6279|0.5952|0.6835|
+|2|0.9739|0.9381|0.9381|
+|3|0.6408|0.5941|0.6316|
